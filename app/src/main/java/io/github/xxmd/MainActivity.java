@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import io.github.xxmd.databinding.ActivityMainBinding;
 
+
+public class MainActivity extends AppCompatActivity {
+    private ActivityMainBinding activityMainBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
