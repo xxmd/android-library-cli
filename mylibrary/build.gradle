@@ -7,7 +7,6 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-//        applicationId "com.example.myapplication"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
@@ -40,11 +39,12 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
+
 // ref from https://github.com/cats-oss/android-gpuimage/blob/master/library/build.gradle
 ext {
     publishedGroupId = 'io.github.xxmd'
     artifact = 'gpuimage'
-    libraryVersion = '1.0.1'
+    libraryVersion = '1.0.0'
     libraryDescription = 'Image filters for Android with OpenGL (based on GPUImage for iOS)'
     siteUrl = 'https://github.com/xxmd/' + artifact
 }
