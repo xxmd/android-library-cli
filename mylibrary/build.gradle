@@ -40,6 +40,11 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
 
+afterEvaluate {
+    // remove BuildConfig class in class.jar
+    generateReleaseBuildConfig.enabled = false
+}
+
 // ref from https://github.com/cats-oss/android-gpuimage/blob/master/library/build.gradle
 ext {
     publishedGroupId = 'io.github.xxmd'
