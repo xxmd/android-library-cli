@@ -1,22 +1,29 @@
-### Introduction
-A android scaffold project for publish android library to maven center.
+# Introduction
+
+An android scaffold project for publish android library to maven center on enviroment of Gradle 6.7.1 and Gradle plugin 4.2.2 .
 
 
-### Why create this project
-In 2023 years, publishing a android library is very simple. However, I mean it in the case if you use environment of gradle and gradle-plugin above 7.0. When you use gradle below 7.0 and gradle-plugin below 4.2.2. The situation is totally different.
+## Why create this project
+
+In 2023 years, publishing an android library is very simple. However, it only established when you use environment of Gradle above 7.0 and Gradle plugin above 7.0. When you use old version, such as Gradle 6.7.1 and Gradle plugin 4.2.2, the situation is totally different.
 
 
-Main different points in list there:
-1. The `setting.gradle` file play different role in gradle version above 7.0 and below 7.0.
-- In gradle version greater than 7.0, `setting.gradle` file will include some modules and manage dependency repository.  
-- In gradle version litter than 7.0, `setting.gradle` file only include modules, the dependency repository script will be written in `build.gradle` file.
+Main different points is list there:
+
+1. The `setting.gradle` file play different role in Gradle version above 7.0 and below 7.0.
+
+   - Gradle version > 7.0, `setting.gradle` file will include some modules and manage dependency repository.  
+
+   - Gradle version < 7.0, `setting.gradle` file only include modules, the dependency repository script will be written in `build.gradle` file.
+
 2. Build artifact generate
-- In Version above 7.0 will auto generator build artifct, you only need to include the release artifact. It will include source code, doc file, resource file, etc.
-- In version below 7.0 you need to generate buld artifact by write task, then include the task in script.
+
+   - Gradle version > 7.0, publish will auto generator build artifact, you only need to include the release artifact. It will include source code, doc file, resource file, etc.
+
+   - Gradle version < 7.0, you need to generate build artifact by write task manually, then include the task in script.
 
 
-### Reference
-Publish configuration mostly reference from
-[android-gpuimage](https://github.com/cats-oss/android-gpuimage) project.
-It's build.gradle file location is [there](https://github.com/cats-oss/android-gpuimage/blob/master/library/build.gradle).
-If you want to publish library on old gradle and gradle-plugin version, you could refer this project carefully.
+## Reference
+
+Publish configuration mostly reference from [android-gpuimage](https://github.com/cats-oss/android-gpuimage) project. It is a excellent project, It's source  `build.gradle` file location is [there](https://github.com/cats-oss/android-gpuimage/blob/master/library/build.gradle).
+If you want to publish library on old Gradle and Gradle plugin version, you could refer this project carefully.
