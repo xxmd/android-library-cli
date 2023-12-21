@@ -3,7 +3,7 @@
 An android scaffold project for publish android library to maven center on enviroment of Gradle 6.7.1 and Gradle plugin 4.2.2 .
 
 
-## Why create this project
+## Difference when publish android library in different Gradle version 
 
 In 2023 years, publishing an android library is very simple. However, it only established when you use environment of Gradle above 7.0 and Gradle plugin above 7.0. When you use old version, such as Gradle 6.7.1 and Gradle plugin 4.2.2, the situation is totally different.
 
