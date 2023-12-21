@@ -48,10 +48,10 @@ afterEvaluate {
 // ref from https://github.com/cats-oss/android-gpuimage/blob/master/library/build.gradle
 ext {
     publishedGroupId = 'io.github.xxmd'
-    artifact = 'gpuimage'
+    artifact = rootProject.name
     libraryVersion = '1.0.0'
-    libraryDescription = 'Image filters for Android with OpenGL (based on GPUImage for iOS)'
-    siteUrl = 'https://github.com/xxmd/' + artifact
+    libraryDescription = ''
+    siteUrl = 'https://github.com/xxmd/' + rootProject.name
 }
 
 apply from: 'publish.gradle'
